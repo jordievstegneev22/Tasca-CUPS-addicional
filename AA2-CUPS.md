@@ -209,7 +209,7 @@ La pàgina de CUPS carrega des del client. Això demostra que el servidor escolt
 
 En entrar a **Administration**, el navegador avisa que el certificat és autosignat ("No segur"). És normal en una xarxa local. CUPS crea aquest certificat sol.
 
-Les opcions **Share printers connected to this system** i **Allow remote administration** ja surten marcades. És per culpa dels canvis que vaig fer al `cupsd.conf`.
+Les opcions **Share printers connected to this system** i **Allow remote administration** ja surten marcades. És gràcies als canvis que vaig fer al `cupsd.conf`.
 
 ### 4.3 Compartir la impressora PDF
 
@@ -264,6 +264,7 @@ Surt la notificació **"Printing"** i la impressora marca **1 tasca**. El trebal
 ### 6.2 Prova 2: fitxer de text des del terminal
 
 ```bash
+echo "Prova d'impressió des del client Zorin" > prova.txt
 lp -d PDF_nom_servidor prova.txt
 ```
 
